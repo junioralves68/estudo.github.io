@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Material de Física</title>
+    <style>
+        body {
+            background: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #004080;
+            color: #fff;
+            padding: 30px 0 18px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 32px;
+            background: #f5f8fb;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+            text-align: center;
+        }
+        .titulo {
+            color: #004080;
+            margin-bottom: 18px;
+        }
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 22px;
+        }
+        .botao-materia {
+            background: #004080;
+            color: #fff;
+            border: none;
+            padding: 16px 0;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .botao-materia:hover {
+            background: #222;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 38px;
+            color: #999;
+            font-size: 1rem;
+        }
+    </style>
+    <script>
+        // Exemplo: mostra uma mensagem com o nome do tema ao clicar
+        function acessarTema(tema) {
+          
+            window.location.href = tema + "_material.pdf";
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Material de Estudos de Física </h1>
+    </div>
+    <div class="container">
+        <h2 class="titulo">Escolha o assunto</h2>
+        <div class="button-list">
+            <button class="botao-materia" onclick="acessarTema('Fundamentos da Física')">Fundamentos da Física</button>
+            <button class="botao-materia" onclick="acessarTema('Mecânica')">Mecânica</button>
+            <button class="botao-materia" onclick="acessarTema('Termologia e Termodinâmica')">Termologia e Termodinâmica</button>
+            <button class="botao-materia" onclick="acessarTema('Óptica')">Óptica</button>
+            <button class="botao-materia" onclick="acessarTema('Ondas')">Ondas</button>
+            <button class="botao-materia" onclick="acessarTema('Eletricidade e Magnetismo')">Eletricidade e Magnetismo</button>
+            
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Casa dos Alves | Matemática - Colégio Naval
+    </div>
+</body>
+</html>

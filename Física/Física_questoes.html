@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questões Matemática</title>
+    <style>
+        body {
+            background: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: #004080;
+            color: #fff;
+            padding: 30px 0 18px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 32px;
+            background: #f5f8fb;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+            text-align: center;
+        }
+        .titulo {
+            color: #004080;
+            margin-bottom: 18px;
+        }
+        .button-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-top: 22px;
+        }
+        .botao-materia {
+            background: #004080;
+            color: #fff;
+            border: none;
+            padding: 16px 0;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .botao-materia:hover {
+            background: #222;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 38px;
+            color: #999;
+            font-size: 1rem;
+        }
+    </style>
+    <script>
+        // Exemplo: mostra uma mensagem com o nome do tema ao clicar
+        function acessarTema(tema) {
+          
+            window.location.href = tema + "_questoes.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Exercicios Matemática - Colégio Naval</h1>
+    </div>
+    <div class="container">
+        <h2 class="titulo">Selecione o tema</h2>
+        <div class="button-list">
+            <button class="botao-materia" onclick="acessarTema('Conjuntos')">Conjuntos</button>
+            <button class="botao-materia" onclick="acessarTema('Números Inteiros e Racionais')">Números Inteiros e Racionais</button>
+            <button class="botao-materia" onclick="acessarTema('Múltiplos e Divisores')">Múltiplos e Divisores</button>
+            <button class="botao-materia" onclick="acessarTema('Potenciação e Radiciação')">Potenciação e Radiciação</button>
+            <button class="botao-materia" onclick="acessarTema('Expressões Algébricas')">Expressões Algébricas</button>
+            <button class="botao-materia" onclick="acessarTema('Equações e Inequações do 1.º e 2.º grau')">Equações e Inequações</button>
+            <button class="botao-materia" onclick="acessarTema('Sistema de Equações')">Sistema de Equações</button>
+            <button class="botao-materia" onclick="acessarTema('Razão, Proporção e Porcentagem')">Razão, Proporção e Porcentagem</button>
+            <button class="botao-materia" onclick="acessarTema('Regra de Três Simples e Composta')">Regra de Três Simples e Composta</button>
+            <button class="botao-materia" onclick="acessarTema('Juros Simples e Compostos')">Juros Simples e Compostos</button>
+            <button class="botao-materia" onclick="acessarTema('Noções de Estatística e Probabilidade')">Noções de Estatística e Probabilidade</button>
+            <button class="botao-materia" onclick="acessarTema('Geometria Plana')">Geometria Plana</button>
+            <button class="botao-materia" onclick="acessarTema('Geometria Espacial')">Geometria Espacial</button>
+            <button class="botao-materia" onclick="acessarTema('Médias Aritmética e Harmônica')">Médias Aritmética e Harmônica</button>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Casa dos Alves | Matemática - Colégio Naval
+    </div>
+</body>
+</html>
