@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questões ou material?</title>
+    <style>
+        body {
+            background: #fff;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 450px;
+            margin: 70px auto;
+            background: #f5f8fb;
+            padding: 40px 20px;
+            border-radius: 18px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+            text-align: center;
+        }
+        h2 {
+            color: #004080;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        .opcoes {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 38px;
+        }
+        .botao-atividade {
+            background: #004080;
+            color: #fff;
+            border: none;
+            padding: 18px 0;
+            border-radius: 10px;
+            font-size: 1.15rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .botao-atividade:hover {
+            background: #222;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 1rem;
+        }
+    </style>
+    <script>
+      
+    	// Funções que podem ser adaptadas para redirecionar ou abrir conteúdo específico
+        function resolverQuestoes() {
+         
+            // Exemplo para redirecionar para questões:
+             window.location.href ="Matemática_questoes.html";
+        }
+        function acessarMaterial() {
+            //alert("Você escolheu: Acessar Material de Estudo");
+            // Exemplo para redirecionar para material de estudo:
+             window.location.href = "Matemática_material.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>O que você deseja fazer?</h2>
+        <div class="opcoes">
+            <button class="botao-atividade" onclick="resolverQuestoes()">Resolver Questões</button>
+            <button class="botao-atividade" onclick="acessarMaterial()">Acessar Material de Estudo</button>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Casa dos Alves | Página de Estudos
+    </div>
+</body>
+</html>

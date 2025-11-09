@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo à Casa dos Alves</title>
+    <style>
+        /* Estilos da página, definindo cores, fontes, posicionamento e detalhes visuais */
+        body {
+            background: #fff; /* Fundo branco */
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .caixa {
+            /* Bloco central de destaque */
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            display: inline-block;
+            padding: 40px 60px;
+            border: 3px solid #004080; /* Bordas azuis */
+        }
+        h1 {
+            /* Título principal */
+            color: #004080;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        p {
+            color: #222;
+            font-size: 1.2rem;
+        }
+        .inputs {
+            /* Espaçamento entre os elementos de seleção */
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+        select {
+            /* Estilo dos menus suspensos de seleção */
+            padding: 8px 14px;
+            border-radius: 10px;
+            border: 2px solid #004080;
+            color: #004080;
+            background: #f5f5f5;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+        button {
+            /* Estilo do botão de escolha */
+            padding: 8px 22px;
+            border-radius: 10px;
+            border: none;
+            background: #004080;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: #222; /* Efeito hover: botão fica preto ao passar o mouse */
+        }
+        .footer {
+            /* Rodapé da página */
+            margin-top: 50px;
+            color: #555;
+            font-size: 1rem;
+        }
+        label {
+            color: #222;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        // Função chamada quando o botão "Escolher" é clicado
+        function escolherMateria() {
+            // Obtém o valor selecionado do menu de usuário
+            var usuario = document.getElementById('usuario').value;
+            // Obtém o valor selecionado do menu de matéria
+            var materia = document.getElementById('materia').value;
+            // Mostra uma mensagem (alert) com as escolhas realizadas
+            alert("Usuário logado: " + usuario + "\nMatéria escolhida: " + materia);
+           
+            window.location.href = "/Testes_servidor_WEB_local/"+materia+"/"+materia+".html";
+            
+        }
+        // Os menus de seleção e botão são controlados por JavaScript para pegar os valores selecionados
+    </script>
+</head>
+<body>
+    <div class="caixa">
+        <h1>Bem-vindo à Página de Estudo</h1>
+        <p>
+            Área de estudos da <strong>Casa dos Alves</strong>.<br>
+            Selecione o usuário e a matéria para começar:
+        </p>
+        <!-- Caixa de seleção do usuário logado -->
+        <div class="inputs">
+            <label for="usuario">Usuário:</label>
+            <select id="usuario">
+                <option value="João">João</option>
+                <option value="Gisele">Gisele</option>
+                <option value="Gabriel">Gabriel</option>
+            </select>
+        </div>
+        <!-- Caixa de seleção da matéria + botão para confirmação -->
+        <div class="inputs">
+            <label for="materia">Matéria:</label>
+            <select id="materia">
+                <option value="Matemática">Matemática</option>
+                <option value="Português">Português</option>
+                <option value="História">História</option>
+                <option value="Geografia">Geografia</option>
+                <option value="Física">Física</option>
+                <option value="Química">Química</option>
+                <option value="Inglês">Inglês</option>
+            </select>
+            <!-- Botão que chama a função JavaScript ao ser clicado -->
+            <button onclick="escolherMateria()">Escolher</button>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2025 Casa dos Alves | Todos os direitos reservados
+    </div>
+</body>
+</html>
